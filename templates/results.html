@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resume Analysis</title>
+</head>
+
+<body>
+
+<h1>AI Resume Analyzer</h1>
+
+<h2>Resume Score : {{ score }}/100</h2>
+
+<h3>Suggestions</h3>
+
+<ul>
+
+{% for item in suggestions %}
+
+<li>{{ item }}</li>
+
+{% endfor %}
+
+</ul>
+
+</body>
+</html>
