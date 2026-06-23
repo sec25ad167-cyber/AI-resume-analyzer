@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>Resume Analysis</title>
+    <title>Resume Analysis Result</title>
 </head>
 
 <body>
 
-<h1>AI Resume Analyzer</h1>
+<h1>Resume Analysis Result</h1>
 
-<h2>Resume Score : {{ score }}/100</h2>
+<h2>Score: {{ score }}/100</h2>
 
 <h3>Suggestions</h3>
 
 <ul>
 
-{% for item in suggestions %}
+{% for s in suggestions %}
 
-<li>{{ item }}</li>
+<li>{{ s }}</li>
 
 {% endfor %}
 
 </ul>
 
+<a href="/">Analyze Another Resume</a>
+
 </body>
+
 </html>
